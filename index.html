@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lemon Coin Challenge 🍋🪙</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #ff9800;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    h1 { font-size: clamp(1.8rem, 7vw, 2.8rem); margin-bottom: 0.5rem; }
+    .subtitle { font-size: clamp(1.1rem, 4.5vw, 1.4rem); opacity: 0.95; }
+
+    main {
+      flex: 1;
+      padding: 1.5rem 1rem;
+      max-width: 640px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .rules, .how-to, .prize {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #f57c00;
+      margin-bottom: 1rem;
+      font-size: clamp(1.4rem, 5vw, 1.8rem);
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      position: relative;
+    }
+
+    li::before {
+      content: "🍋";
+      position: absolute;
+      left: 0;
+      font-size: 1.3rem;
+    }
+
+    .emoji-big {
+      font-size: 5rem;
+      text-align: center;
+      margin: 1.5rem 0;
+      display: block;
+    }
+
+    .cta {
+      background: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 1.4rem;
+      border-radius: 16px;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin: 2rem 0;
+      box-shadow: 0 6px 20px rgba(76,175,80,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.95rem;
+      color: #555;
+      border-top: 1px solid #ffd180;
+    }
+
+    @media (min-width: 500px) {
+      main { padding: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lemon Coin Challenge</h1>
+    <p class="subtitle">Balance a coin → Win Free Drink! 🍋🪙</p>
+  </header>
+
+  <main>
+    <div class="emoji-big">🍋 + 🪙 = ?</div>
+
+    <div class="rules">
+      <h2>Rules (Super Simple)</h2>
+      <ul>
+        <li>Take any small coin (₹1, ₹2, ₹5 etc.)</li>
+        <li>Balance it on top of the lemon (in water or dry — ask staff)</li>
+        <li>Hold for <strong>5 seconds</strong> without falling</li>
+        <li>No touching/adjusting after you let go!</li>
+        <li>Drop? Coin goes to our tip jar — no extra charge 😄</li>
+      </ul>
+    </div>
+
+    <div class="prize">
+      <h2>Prizes</h2>
+      <ul>
+        <li>Win → <strong>FREE Coffee / Tea / Cold Drink</strong> (or 50% off your order)</li>
+        <li>Just for fun? Still get smiles & bragging rights!</li>
+      </ul>
+    </div>
+
+    <div class="how-to">
+      <h2>Tips from Winners</h2>
+      <ul>
+        <li>Place coin gently in the center</li>
+        <li>Try the flattest part of the lemon</li>
+        <li>Steady hands + patience = success</li>
+        <li>Most people fail — you're not alone 😂</li>
+      </ul>
+    </div>
+
+    <div class="cta" onclick="alert('Come to the counter and say: I want to try the Lemon Coin Challenge! 🍋')">
+      Try Now at Counter! 👆
+    </div>
+  </main>
+
+  <footer>
+    <p>Come visit us in Hyderabad • #LemonCoinChallenge • Made with fun by your local cafe</p>
+  </footer>
+
+  <script>
+    // Optional: add confetti or animation later if you want
+    console.log("Lemon Coin Challenge page loaded 🍋");
+  </script>
+
+</body>
+</html>
